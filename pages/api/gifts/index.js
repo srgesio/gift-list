@@ -18,6 +18,7 @@ export default function getGifts(request, response){
                     description
                     name
                     contact
+                    url
                 }
             }` })
             })

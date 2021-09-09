@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styles from '../styles/Item.module.css'
+import Link from 'next/link'
 
 export default function Item(props){
     const [name, setName] = useState('')
@@ -26,15 +27,32 @@ export default function Item(props){
         })
     }
 
-
     return(
         <div className={styles.item}>
+            
+
             <div className={styles.itemName}>
                 <h3>{props.gift.product}</h3>
                 <span>{props.gift.description}</span>
             </div>
-                <div className={styles.action}>
-
+            {props.gift.url ?
+            
+            <div className={styles.sugestion}>
+                <a href={props.gift.url} target='_blank' rel="noopener noreferrer">
+                    <button>
+                        Sugestão
+                    </button>
+                </a>
+            </div> :
+                <div className={styles.noSugestion}>
+                            <button>
+                                Sugestão
+                            </button>
+                </div>
+            }
+            {!props.sign ? 
+            <div className={styles.action}>
+            
                 <div className={styles.itemInput}>
                     <input
                         className={styles.inputSign}
@@ -56,12 +74,23 @@ export default function Item(props){
                                 name,
                                 contact
                             })
+                            location.replace('/thanks')
                         }}
                     >
                         Assinar
                     </button>
                 </div>
-            </div>
+                </div>
+                : 
+                <div className={styles.actionSigned}>
+                    <div className={styles.itemSigned}>
+                        <h3>Presente já assinado ♥</h3>
+                    </div>
+                </div>
+
+            }
+
+                
             </div>
     )
 }

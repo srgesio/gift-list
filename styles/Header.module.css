@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.container header {
+  background: #d45555;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.logo {
+  max-width: 350px;
+  width: 70%;
+  height: auto;
+  padding: 0 30px;
+}

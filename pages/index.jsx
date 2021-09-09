@@ -2,6 +2,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 import Item from '../components/Item'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 import { useEffect, useState } from 'react'
 
 export default function Home() {
@@ -27,14 +29,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <header>
-          <Image
-            className={styles.logo}
-            src="/logotipoHorizontalKarolEGesio.svg"
-            height={'100%'}
-            width={350}
-            alt="Karol&Gésio" />
-      </header>
+      <Header/>
       <h1>
         Lista de presentes
       </h1>
@@ -52,9 +47,21 @@ export default function Home() {
             : null
           ))}
         </div>
-      <footer>
-        <span>Criado por NODA ■</span>
-      </footer>
+        <h3>Presentes assinados</h3>
+        <p>Veja o que outros escolheram</p>
+        <div className={styles.signedList}>
+          {gifts.map((gift, index) =>(
+            gift.name != '' ?  
+            <Item
+              key={index}
+              gift={gift}
+              update={setGifts}
+              sign={true}
+            />
+            : null
+          ))}
+        </div>
+      <Footer/>
     </div>
   )
 }
