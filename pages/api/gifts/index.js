@@ -12,7 +12,7 @@ export default function getGifts(request, response){
                 'Accept': 'application/json',
             },
             body: JSON.stringify({ "query": `query {
-                allGifts {
+                allGifts(first: 100, orderBy: product_ASC) {
                     id
                     product
                     description
