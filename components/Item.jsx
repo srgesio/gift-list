@@ -29,27 +29,13 @@ export default function Item(props){
 
     return(
         <div className={styles.item}>
-            
+           
 
             <div className={styles.itemName}>
                 <h3>{props.gift.product}</h3>
                 <span>{props.gift.description}</span>
             </div>
-            {props.gift.url ?
             
-            <div className={styles.sugestion}>
-                <a href={props.gift.url} target='_blank' rel="noopener noreferrer">
-                    <button>
-                        Sugestão
-                    </button>
-                </a>
-            </div> :
-                <div className={styles.noSugestion}>
-                            <button>
-                                Sugestão
-                            </button>
-                </div>
-            }
             {!props.sign ? 
             <div className={styles.action}>
             
@@ -89,7 +75,21 @@ export default function Item(props){
                 </div>
 
             }
-
+             {props.gift.url ?
+            
+            <div className={styles.sugestion}>
+                <a href={props.gift.url} target='_blank' rel="noopener noreferrer">
+                    <button>
+                        Sugestão de Compra
+                    </button>
+                </a>
+            </div> :
+                <div className={styles.noSugestion}>
+                            <button>
+                                Sugestão de Compra
+                            </button>
+                </div>
+            }
                 
             </div>
     )

@@ -33,7 +33,7 @@
 .action button {
   height: 100%;
   padding: 10px;
-  background: #d45555;
+  background: #921a3d;
   border: none;
   font-weight: bold;
   font-size: 12px;
@@ -43,16 +43,22 @@
 }
 
 .actionSigned .itemSigned h3 {
-  color: #d45555;
+  color: #921a3d;
   padding: 10px;
   border-radius: 5px;
 }
 
+.sugestion,
+.noSugestion {
+  width: 100%;
+}
 .sugestion button {
+  display: flex;
+  justify-content: center;
   height: 100%;
   width: 100%;
   padding: 10px;
-  background: #d45555;
+  background: #921a3d;
   border: none;
   text-decoration: none;
   font-weight: bold;
@@ -60,9 +66,14 @@
   color: #fff;
   cursor: pointer;
   border-radius: 10px;
+  box-shadow: 3px 3px 5px #0005;
+}
+.sugestion button:hover {
+  box-shadow: none;
 }
 .noSugestion button {
   display: flex;
+  justify-content: center;
   height: 100%;
   width: 100%;
   padding: 10px;
