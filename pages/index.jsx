@@ -8,50 +8,39 @@ import { useEffect, useState } from 'react'
 
 export default function Home() {
 
-  
+
   const [gifts, setGifts] = useState([])
 
-  useEffect(()=>{
-      callGifts()
-      function callGifts(){
-        fetch('/api/gifts', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        }).then(response=>response.json())
-        .then(async (response)=>{
+  useEffect(() => {
+    callGifts()
+    function callGifts() {
+      fetch('/api/gifts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }).then(response => response.json())
+        .then(async (response) => {
           setGifts(await response)
         })
-      }
-  },[setGifts])
-  
+    }
+  }, [setGifts])
+
 
   return (
     <div className={styles.container}>
-      <Header/>
+      <Header />
       <h1>
         Lista de presentes
       </h1>
       <p>
         Escolha o presente a baixo e assine
       </p>
-        <div className={styles.list}>
-          {gifts.map((gift, index) =>(
-            gift.name == '' ?  
-            <Item
-              key={index}
-              gift={gift}
-              update={setGifts}
-            />
-            : null
-          ))}
-        </div>
-        <h3>Presentes assinados</h3>
-        <p>Veja o que outros escolheram</p>
-        <div className={styles.signedList}>
-          {gifts.map((gift, index) =>(
-            gift.name != '' ?  
+      <h3>Presentes assinados</h3>
+      <p>Veja o que outros escolheram</p>
+      <div className={styles.signedList}>
+        {gifts.map((gift, index) => (
+          gift.name != '' ?
             <Item
               key={index}
               gift={gift}
@@ -59,9 +48,21 @@ export default function Home() {
               sign={true}
             />
             : null
-          ))}
-        </div>
-      <Footer/>
+        ))}
+      </div>
+      <div className={styles.list}>
+        {gifts.map((gift, index) => (
+          gift.name == '' ?
+            <Item
+              key={index}
+              gift={gift}
+              update={setGifts}
+            />
+            : null
+        ))}
+      </div>
+
+      <Footer />
     </div>
   )
 }
