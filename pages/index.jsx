@@ -34,10 +34,8 @@ export default function Home() {
         Lista de presentes
       </h1>
       <p>
-        Escolha o presente a baixo e assine
+        Escolha um presente desejado
       </p>
-      <h3>Presentes assinados</h3>
-      <p>Veja o que outros escolheram</p>
       <div className={styles.signedList}>
         {gifts.map((gift, index) => (
           gift.name != '' ?

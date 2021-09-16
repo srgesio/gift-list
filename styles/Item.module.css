@@ -11,6 +11,22 @@
   background: #f7f7f7;
 }
 
+.itemSigned{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px #0002;
+  padding: 15px;
+  border-radius: 20px;
+  width: fit-content;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  background: #dba9a0;
+  color: #fff;
+}
+
+
+
 .inputSign,
 .inputContact {
   border: 1px solid #cecece;
@@ -24,6 +40,9 @@
   padding: 10px;
 }
 
+.itemSigned .itemName{
+  color: #921a3d;
+}
 .action {
   display: flex;
   padding: 10px;
@@ -42,12 +61,18 @@
   border-radius: 0 10px 10px 0;
 }
 
-.actionSigned .itemSigned h3 {
+.actionSigned .textSigned h3 {
+  color: #921a3d;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.itemSigned .actionSigned .textSigned h3 {
   color: #921a3d;
   padding: 10px;
   border-radius: 5px;
 }
-
 .sugestion,
 .noSugestion {
   width: 100%;
@@ -77,11 +102,15 @@
   height: 100%;
   width: 100%;
   padding: 10px;
-  background: #ccc;
+  background: #fff;
   border: none;
   text-decoration: none;
   font-weight: bold;
   font-size: 12px;
-  color: #fff;
+  color: #ccc;
   border-radius: 10px;
+}
+
+.itemSigned .sugestion button{
+  background: #921a3d;
 }
