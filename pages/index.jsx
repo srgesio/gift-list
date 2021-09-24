@@ -36,6 +36,21 @@ export default function Home() {
       <p>
         Escolha um presente desejado
       </p>
+
+      <div className={styles.message}>
+
+        <p>
+          Alguns itens da lista possuem um link de sugestão. <br />
+          Caso prefira, pode ficar a vontade para procurar em outras lojas.
+        </p>
+        <p>
+          <b>
+            Endereço para entrega:
+          </b><br />
+          Rua dos Tororós, 335a - Alecrim, Natal/RN <br />
+          CEP: 59032-550
+        </p>
+      </div>
       <div className={styles.signedList}>
         {gifts.map((gift, index) => (
           gift.name != '' ?

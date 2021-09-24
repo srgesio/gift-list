@@ -23,3 +23,12 @@
   align-items: center;
   min-height: fit-content;
 }
+
+.message{
+  padding: 0 35px;
+  width: 100%;
+}
+
+.message p{
+  margin: 20px 0;
+}
