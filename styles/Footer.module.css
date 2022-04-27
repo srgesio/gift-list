@@ -2,14 +2,15 @@
   display: flex;
   width: 100%;
 }
+
 .container footer {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px;
   height: 20px;
-  color: #921a3d;
-  background: #dba9a0;
+  color: #fff;
+  background: #b35842;
   border-radius: 30px 30px 0 0;
   width: 100%;
   margin-bottom: 0;

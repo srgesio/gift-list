@@ -1,10 +1,11 @@
 .container {
   display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
 .container header {
-  background: #000;
+  background: #b35842;
   display: flex;
   justify-content: center;
   color: #fff;
@@ -12,6 +13,18 @@
   border-radius: 0 0 30px 30px;
   margin-bottom: 15px;
   width: 100%;
+  position: relative;
+  z-index: 1;
+  box-shadow: 2px 2px 16px #0005;
+}
+
+.container header h1 {
+  position: absolute;
+  left: 20%;
+  background: #657b69;
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: 400;
 }
 
 .logo {
@@ -19,4 +32,22 @@
   width: 70%;
   height: auto;
   padding: 0 30px;
+}
+
+@media screen and (max-width: 728px) {
+  .container header {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .container header h1 {
+    position: inherit;
+    padding: 0;
+    left: auto;
+    background: transparent;
+  }
+
+  .container header span {
+    font-size: 18px;
+  }
 }
