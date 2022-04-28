@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 import Item from '../components/Item'
@@ -47,9 +48,18 @@ export default function Home() {
           <b>
             Endereço para entrega:
           </b><br />
-          Rua dos Tororós, 335a - Alecrim, Natal/RN <br />
+          Rua dos Tororós, 337 - Alecrim, Natal/RN <br />
           CEP: 59032-550
         </p>
+        <h4>
+
+          Veja também:
+        </h4>
+        <Link href='http://casamentokel.vercel.app' passHref>
+          <button className={styles.otherList}>
+            Klara & Leonardo
+          </button>
+        </Link>
       </div>
       <div className={styles.signedList}>
         {gifts.map((gift, index) => (

@@ -1,5 +1,12 @@
 @import url("https: //fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap");
 
+@font-face {
+  font-family: 'Longtail Script';
+  src: url('../public/longtail.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
@@ -21,6 +28,5 @@ h4 {
 }
 
 * {
-  font-family: "Raleway";
   box-sizing: border-box;
 }

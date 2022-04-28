@@ -1,8 +1,8 @@
 require('dotenv/config')
 
-const tokenApi = process.env.API_DATOCMS
+const tokenApi = process.env.API_DATOCMS_KEP
 
-console.log(process.env.API_DATOCMS)
+console.log(process.env.API_DATOCMS_KEP)
 
 export default function getGifts(request, response) {
     if (request.method === 'POST') {

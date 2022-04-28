@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   min-height: 100vh;
-  color: #657b69;
+  color: #5d807e;
 }
 
 .list {
@@ -34,6 +34,15 @@
 
 .message p {
   margin: 20px 0;
+}
+
+.otherList {
+  background: #5d807e;
+  color: #fff;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
 }
 
 @media screen and (max-width: 728px) {

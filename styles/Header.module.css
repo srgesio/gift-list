@@ -8,9 +8,11 @@
   background: #b35842;
   display: flex;
   justify-content: center;
+  align-items: center;
   color: #fff;
-  padding: 10px;
+  height: 150px;
   border-radius: 0 0 30px 30px;
+  border-bottom: 2px solid #b35842;
   margin-bottom: 15px;
   width: 100%;
   position: relative;
@@ -19,12 +21,9 @@
 }
 
 .container header h1 {
-  position: absolute;
-  left: 20%;
-  background: #657b69;
-  padding: 16px;
-  border-radius: 16px;
-  font-weight: 400;
+  font-family: 'Longtail Script';
+  font-size: 64px;
+  font-weight: normal;
 }
 
 .logo {
@@ -41,10 +40,7 @@
   }
 
   .container header h1 {
-    position: inherit;
-    padding: 0;
-    left: auto;
-    background: transparent;
+    font-size: 48px;
   }
 
   .container header span {
