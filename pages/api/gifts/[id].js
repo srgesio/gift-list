@@ -1,7 +1,7 @@
 require('dotenv/config')
 import { SiteClient } from "datocms-client";
 
-const tokenApi = process.env.API_DATOCMS
+const tokenApi = process.env.API_DATOCMS_KEL
 
 const client = new SiteClient(tokenApi);
 
