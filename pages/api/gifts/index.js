@@ -1,6 +1,6 @@
 require('dotenv/config')
 
-const tokenApi = process.env.API_DATOCMS_KEP
+const tokenApi = process.env.API_DATOCMS_KEL
 
 console.log(process.env.API_DATOCMS_KEL)
 
