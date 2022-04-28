@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   min-height: 100vh;
+  color: #5d807e;
 }
 
 .list {
@@ -15,6 +16,7 @@
   min-height: fit-content;
   margin-bottom: 35px;
 }
+
 .signedList {
   width: 90%;
   padding: 10px;
@@ -24,11 +26,27 @@
   min-height: fit-content;
 }
 
-.message{
-  padding: 0 35px;
+.message {
+  padding: 0;
   width: 100%;
+  max-width: 640px;
 }
 
-.message p{
+.message p {
   margin: 20px 0;
+}
+
+.otherList {
+  background: #5d807e;
+  color: #fff;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+@media screen and (max-width: 728px) {
+  .message {
+    padding: 0 35px;
+  }
 }
