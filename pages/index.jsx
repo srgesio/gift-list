@@ -55,9 +55,9 @@ export default function Home() {
 
           Veja também:
         </h4>
-        <Link href='http://casamentokel.vercel.app' passHref>
+        <Link href='http://casamentokep.vercel.app' passHref>
           <button className={styles.otherList}>
-            Klara & Leonardo
+            Kadydja & Phelipe
           </button>
         </Link>
       </div>

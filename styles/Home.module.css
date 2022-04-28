@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   min-height: 100vh;
-  color: #5d807e;
+  color: #b35842;
 }
 
 .list {
@@ -37,7 +37,7 @@
 }
 
 .otherList {
-  background: #5d807e;
+  background: #b35842;
   color: #fff;
   height: 40px;
   padding: 8px 16px;

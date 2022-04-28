@@ -5,14 +5,14 @@
 }
 
 .container header {
-  background: #b35842;
+  background: #5d807e;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   height: 150px;
   border-radius: 0 0 30px 30px;
-  border-bottom: 2px solid #b35842;
+  border-bottom: 2px solid #5d807e;
   margin-bottom: 15px;
   width: 100%;
   position: relative;

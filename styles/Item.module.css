@@ -21,7 +21,7 @@
   width: fit-content;
   flex-wrap: wrap;
   margin: 10px 0;
-  background: #afebd4;
+  background: #f9c7ba;
   color: #fff;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .itemSigned .itemName {
-  color: #5d807e;
+  color: #b35842;
 }
 
 .action {
@@ -53,7 +53,7 @@
 .action button {
   height: 100%;
   padding: 10px;
-  background: #5d807e;
+  background: #b35842;
   border: none;
   font-weight: bold;
   font-size: 12px;
@@ -63,7 +63,7 @@
 }
 
 .actionSigned .textSigned h3 {
-  color: #5d807e;
+  color: #b35842;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -71,7 +71,7 @@
 }
 
 .itemSigned .actionSigned .textSigned h3 {
-  color: #5d807e;
+  color: #b35842;
   padding: 10px;
   border-radius: 5px;
 }
@@ -87,7 +87,7 @@
   height: 100%;
   width: 100%;
   padding: 10px;
-  background: #5d807e;
+  background: #b35842;
   border: none;
   text-decoration: none;
   font-weight: bold;
@@ -118,5 +118,5 @@
 }
 
 .itemSigned .sugestion button {
-  background: #5d807e;
+  background: #b35842;
 }
