@@ -7,7 +7,7 @@ export default function Header() {
         <div className={styles.container}>
 
             <header>
-                <h1>Kadydja & Phelipe</h1>
+                <h1>Letícia & David</h1>
             </header>
         </div>
     )

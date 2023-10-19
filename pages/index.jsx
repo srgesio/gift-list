@@ -31,36 +31,40 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Header />
+      <div className={styles['banner-container']}>
+      <img
+        src="/led.jpeg"
+        alt="Leticia e David"
+        className={styles['banner-image']}
+      />
+    </div>
       <h1>
-        Lista de presentes
+      Chá de Casa Nova
       </h1>
-      <p>
-        Escolha um presente desejado
-      </p>
 
       <div className={styles.message}>
-
         <p>
           Alguns itens da lista possuem um link de sugestão. <br />
           Caso prefira, pode ficar a vontade para procurar em outras lojas.
         </p>
         <p>
           <b>
-            Endereço para entrega:
-          </b><br />
-          Rua dos Tororós, 337 - Alecrim, Natal/RN <br />
-          CEP: 59032-550
+            Endereços para entrega:
+          </b><br /><br />
+          Rua Monsenhor Pegado, 100 - Barro Vermelho, Natal/RN <br />
+          CEP: 59030-420
         </p>
-        <h4>
-
-          Veja também:
-        </h4>
-        <Link href='http://casamentokel.vercel.app' passHref>
-          <button className={styles.otherList}>
-            Klara & Leonardo
-          </button>
-        </Link>
+        <p>
+          Ou
+        </p>
+        <p>
+        Avenida Bom Pastor, 28 - Bom Pastor, Natal/RN <br />
+          CEP: 59052-080
+        </p>
       </div>
+      <p>
+        Escolha um presente desejado
+      </p>
       <div className={styles.signedList}>
         {gifts.map((gift, index) => (
           gift.name != '' ?

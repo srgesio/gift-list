@@ -3,17 +3,18 @@
   flex-direction: column;
   width: 100%;
 }
-
+/*
+#678555
+#776456
+*/
 .container header {
-  background: #b35842;
+  background: #678555;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  height: 150px;
-  border-radius: 0 0 30px 30px;
-  border-bottom: 2px solid #b35842;
-  margin-bottom: 15px;
+  height: 120px;
+  border-bottom: 2px solid #678555;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -21,7 +22,7 @@
 }
 
 .container header h1 {
-  font-family: 'Longtail Script';
+  font-family: 'Great Vibes';
   font-size: 64px;
   font-weight: normal;
 }
