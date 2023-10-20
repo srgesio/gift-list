@@ -44,10 +44,6 @@ export default function Home() {
 
       <div className={styles.message}>
         <p>
-          Alguns itens da lista possuem um link de sugestão. <br />
-          Caso prefira, pode ficar a vontade para procurar em outras lojas.
-        </p>
-        <p>
           <b>
             Endereços para entrega:
           </b><br /><br />
